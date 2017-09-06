@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3937F2F41F5FC4A800556BBF /* YLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2F31F5FC4A800556BBF /* YLTabBarController.m */; };
+		3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */; };
+		91F292CC17934D6FEEE3BE9B /* libPods-YLShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659830C96AD7ED2E1A4E7E12 /* libPods-YLShare.a */; };
 		D82BE2B11F5DAE42003A37DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D82BE2B01F5DAE42003A37DB /* main.m */; };
 		D82BE2B41F5DAE42003A37DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82BE2B31F5DAE42003A37DB /* AppDelegate.m */; };
-		D82BE2B71F5DAE42003A37DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82BE2B61F5DAE42003A37DB /* ViewController.m */; };
 		D82BE2BA1F5DAE42003A37DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82BE2B81F5DAE42003A37DB /* Main.storyboard */; };
 		D82BE2BC1F5DAE42003A37DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82BE2BB1F5DAE42003A37DB /* Assets.xcassets */; };
 		D82BE2BF1F5DAE42003A37DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82BE2BD1F5DAE42003A37DB /* LaunchScreen.storyboard */; };
@@ -35,12 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3937F2F21F5FC4A800556BBF /* YLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTabBarController.h; sourceTree = "<group>"; };
+		3937F2F31F5FC4A800556BBF /* YLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTabBarController.m; sourceTree = "<group>"; };
+		3937F2F51F5FC62300556BBF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3937F2FA1F5FC8BC00556BBF /* GlobalDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDef.h; sourceTree = "<group>"; };
+		3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalDef.m; sourceTree = "<group>"; };
+		3937F2FD1F5FC9A500556BBF /* UtilityMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMacro.h; sourceTree = "<group>"; };
+		659830C96AD7ED2E1A4E7E12 /* libPods-YLShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBBD57A0E8538817F711A56 /* Pods-YLShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLShare/Pods-YLShare.release.xcconfig"; sourceTree = "<group>"; };
 		D82BE2AC1F5DAE41003A37DB /* YLShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82BE2B01F5DAE42003A37DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D82BE2B21F5DAE42003A37DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D82BE2B31F5DAE42003A37DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D82BE2B51F5DAE42003A37DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D82BE2B61F5DAE42003A37DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D82BE2B91F5DAE42003A37DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D82BE2BB1F5DAE42003A37DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82BE2BE1F5DAE42003A37DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 		D82BE2D01F5DAE42003A37DB /* YLShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82BE2D41F5DAE42003A37DB /* YLShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLShareUITests.m; sourceTree = "<group>"; };
 		D82BE2D61F5DAE42003A37DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA24EC167EEB01DD9A9445D /* Pods-YLShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLShare/Pods-YLShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F292CC17934D6FEEE3BE9B /* libPods-YLShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D59AEA14745A013AFAF7664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECA24EC167EEB01DD9A9445D /* Pods-YLShare.debug.xcconfig */,
+				8BBBD57A0E8538817F711A56 /* Pods-YLShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3937F2EC1F5F97FF00556BBF /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3937F2ED1F5F97FF00556BBF /* YLPlayer */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3937F2ED1F5F97FF00556BBF /* YLPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YLPlayer;
+			sourceTree = "<group>";
+		};
+		3937F2EE1F5F97FF00556BBF /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		3937F2EF1F5F97FF00556BBF /* VideoPages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoPages;
+			sourceTree = "<group>";
+		};
+		3937F2F01F5F97FF00556BBF /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		3937F2F11F5F992800556BBF /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3937F2F21F5FC4A800556BBF /* YLTabBarController.h */,
+				3937F2F31F5FC4A800556BBF /* YLTabBarController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		3937F2F61F5FC89B00556BBF /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
+				3937F2F71F5FC89B00556BBF /* Additions */,
+				3937F2F81F5FC89B00556BBF /* Global */,
+				3937F2F91F5FC89B00556BBF /* YLShareManager */,
+			);
+			path = PublicClass;
+			sourceTree = "<group>";
+		};
+		3937F2F71F5FC89B00556BBF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		3937F2F81F5FC89B00556BBF /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3937F2FA1F5FC8BC00556BBF /* GlobalDef.h */,
+				3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */,
+				3937F2FD1F5FC9A500556BBF /* UtilityMacro.h */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3937F2F91F5FC89B00556BBF /* YLShareManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YLShareManager;
+			sourceTree = "<group>";
+		};
+		82710FF5E68BCE41960F5E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659830C96AD7ED2E1A4E7E12 /* libPods-YLShare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D82BE2A31F5DAE41003A37DB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +191,8 @@
 				D82BE2C81F5DAE42003A37DB /* YLShareTests */,
 				D82BE2D31F5DAE42003A37DB /* YLShareUITests */,
 				D82BE2AD1F5DAE41003A37DB /* Products */,
+				1D59AEA14745A013AFAF7664 /* Pods */,
+				82710FF5E68BCE41960F5E81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +209,14 @@
 		D82BE2AE1F5DAE41003A37DB /* YLShare */ = {
 			isa = PBXGroup;
 			children = (
+				3937F2F61F5FC89B00556BBF /* PublicClass */,
+				3937F2EC1F5F97FF00556BBF /* CustomViews */,
+				3937F2EE1F5F97FF00556BBF /* UIWebView */,
+				3937F2EF1F5F97FF00556BBF /* VideoPages */,
+				3937F2F01F5F97FF00556BBF /* WKWebView */,
+				3937F2F11F5F992800556BBF /* BaseViewController */,
 				D82BE2B21F5DAE42003A37DB /* AppDelegate.h */,
 				D82BE2B31F5DAE42003A37DB /* AppDelegate.m */,
-				D82BE2B51F5DAE42003A37DB /* ViewController.h */,
-				D82BE2B61F5DAE42003A37DB /* ViewController.m */,
 				D82BE2B81F5DAE42003A37DB /* Main.storyboard */,
 				D82BE2BB1F5DAE42003A37DB /* Assets.xcassets */,
 				D82BE2BD1F5DAE42003A37DB /* LaunchScreen.storyboard */,
@@ -118,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				D82BE2B01F5DAE42003A37DB /* main.m */,
+				3937F2F51F5FC62300556BBF /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82BE2D91F5DAE42003A37DB /* Build configuration list for PBXNativeTarget "YLShare" */;
 			buildPhases = (
+				FDD1607E8D24FD7A75C555B1 /* [CP] Check Pods Manifest.lock */,
 				D82BE2A81F5DAE41003A37DB /* Sources */,
 				D82BE2A91F5DAE41003A37DB /* Frameworks */,
 				D82BE2AA1F5DAE41003A37DB /* Resources */,
+				BCF8FB52EAE42C587080E8B1 /* [CP] Embed Pods Frameworks */,
+				94F047C298A63871E07C9227 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,13 +384,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94F047C298A63871E07C9227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLShare/Pods-YLShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF8FB52EAE42C587080E8B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YLShare/Pods-YLShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD1607E8D24FD7A75C555B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D82BE2A81F5DAE41003A37DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D82BE2B71F5DAE42003A37DB /* ViewController.m in Sources */,
 				D82BE2B41F5DAE42003A37DB /* AppDelegate.m in Sources */,
+				3937F2F41F5FC4A800556BBF /* YLTabBarController.m in Sources */,
+				3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */,
 				D82BE2B11F5DAE42003A37DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,8 +587,10 @@
 		};
 		D82BE2DA1F5DAE42003A37DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA24EC167EEB01DD9A9445D /* Pods-YLShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = YLShare/PrefixHeader.pch;
 				INFOPLIST_FILE = YLShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
@@ -433,8 +600,10 @@
 		};
 		D82BE2DB1F5DAE42003A37DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBBD57A0E8538817F711A56 /* Pods-YLShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = YLShare/PrefixHeader.pch;
 				INFOPLIST_FILE = YLShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
@@ -507,6 +676,7 @@
 				D82BE2DB1F5DAE42003A37DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D82BE2DC1F5DAE42003A37DB /* Build configuration list for PBXNativeTarget "YLShareTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +685,7 @@
 				D82BE2DE1F5DAE42003A37DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D82BE2DF1F5DAE42003A37DB /* Build configuration list for PBXNativeTarget "YLShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +694,7 @@
 				D82BE2E11F5DAE42003A37DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

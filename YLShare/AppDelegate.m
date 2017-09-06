@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [application setStatusBarOrientation:UIInterfaceOrientationPortrait];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = UIColorWhite;
+    [self.window makeKeyAndVisible];
+    YLTabBarController * tabBar = [[YLTabBarController alloc]init];
+    self.tabBarViewController = tabBar;
+    self.window.rootViewController = tabBar;
+    
     return YES;
 }
 
