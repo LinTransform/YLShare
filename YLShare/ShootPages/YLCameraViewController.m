@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"Camera";
     
     self.showView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, Main_Screen_Width, Main_Screen_Width * SHOOT_RATIO)];
@@ -35,6 +35,7 @@
     CGFloat y = CGRectGetMaxY(self.showView.frame);
     UIButton * shootButton = [[UIButton alloc] initWithFrame:CGRectMake(x, y, w, h)];
     [shootButton setTitle:@"录像" forState:UIControlStateNormal];
+    [shootButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [shootButton addTarget:self action:@selector(shootButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:shootButton];
     

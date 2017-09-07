@@ -38,7 +38,7 @@
         make.height.mas_equalTo(KTabBarHeight);
     }];
 
-    NSArray * titleArray = @[@"Video",@"JS-Native",@"Camera"];
+    NSArray * titleArray = @[@"Camera",@"Video",@"JS-Native"];
 
     CGFloat buttonWidth = App_Frame_Width / titleArray.count;
     
@@ -64,10 +64,10 @@
     }
     [_tabBarBg setItems:buttonArray];
     
+    YLNavigationController * cameraNav = [[YLNavigationController alloc] initWithRootViewController:[[YLCameraViewController alloc] init]];
     YLNavigationController * videoNav = [[YLNavigationController alloc] initWithRootViewController:[[YLVideoViewController alloc] init]];
     YLNavigationController * jsNativeNav = [[YLNavigationController alloc] initWithRootViewController:[[YLJSNativeViewController alloc] init]];
-    YLNavigationController * cameraNav = [[YLNavigationController alloc] initWithRootViewController:[[YLCameraViewController alloc] init]];
-    [self setViewControllers:[NSArray arrayWithObjects:videoNav,jsNativeNav,cameraNav,nil]];
+    [self setViewControllers:[NSArray arrayWithObjects:cameraNav,videoNav,jsNativeNav,nil]];
     [self hideTabBar];
 }
 
