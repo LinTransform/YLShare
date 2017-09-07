@@ -35,4 +35,11 @@
 #define UIImageViewNamed(x) [[UIImageView alloc] initWithImage:UIImageNamed(x)]
 #define UIImageViewImage(x) [[UIImageView alloc] initWithImage:x]
 
+// 其他
+#define BlockSelf(x)        __block typeof(self) x = self
+#define WeakSelf(x)         __weak typeof(self) x = self
+#define weakObj(x) autoreleasepool{} __weak typeof(x) weakSelf = x;
+#define strongObj(x) autoreleasepool{} __strong typeof(x) strongSelf = weakSelf;
+
+
 #endif

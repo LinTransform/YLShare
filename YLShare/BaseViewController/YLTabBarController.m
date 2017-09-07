@@ -7,6 +7,10 @@
 //
 
 #import "YLTabBarController.h"
+#import "YLNavigationController.h"
+#import "YLJSNativeViewController.h"
+#import "YLVideoViewController.h"
+#import "YLCameraViewController.h"
 
 @interface YLTabBarController (){
 
@@ -34,20 +38,17 @@
         make.height.mas_equalTo(KTabBarHeight);
     }];
 
-    NSArray * imageArr = [NSArray arrayWithObjects:@"main", @"video", @"post_pen",@"discover", nil];
-    NSArray * selectImageArr = [NSArray arrayWithObjects:@"main_select.png", @"video_select.png",@"post_pen_select", @"discover_select", nil];
-    NSArray * titleArray = @[@"Video",@"UIWeb",@"WKWeb",@"Test"];
+    NSArray * titleArray = @[@"Video",@"JS-Native",@"Camera"];
 
-    CGFloat buttonWidth = App_Frame_Width / imageArr.count;
+    CGFloat buttonWidth = App_Frame_Width / titleArray.count;
     
     NSMutableArray *buttonArray = [NSMutableArray array];
-    for (int i = 0; i < imageArr.count; i++) {
+    for (int i = 0; i < titleArray.count; i++) {
         UIButton * subButton = [[UIButton alloc]initWithFrame:CGRectMake(0, i*buttonWidth, buttonWidth, KTabBarHeight)];
         subButton.tag = i;
-        [subButton setImage:[UIImage imageNamed:[imageArr objectAtIndex:i]] forState:UIControlStateNormal];
-        [subButton setImage:[UIImage imageNamed:[selectImageArr objectAtIndex:i]] forState:UIControlStateSelected];
         [subButton setTitle:[titleArray objectAtIndex:i] forState:UIControlStateNormal];
-        [subButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [subButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [subButton setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
         [subButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
         [subButton setShowsTouchWhenHighlighted:YES];
         UIBarButtonItem *spaceitem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
@@ -62,17 +63,12 @@
         [_btnArr addObject:subButton];
     }
     [_tabBarBg setItems:buttonArray];
-    // 首页
-    UIViewController * vc = [[UIViewController alloc] init];
-    UIViewController * vc2 = [[UIViewController alloc] init];
-    UIViewController * vc3 = [[UIViewController alloc] init];
-    UIViewController * vc4 = [[UIViewController alloc] init];
-
-    [self setViewControllers:[NSArray arrayWithObjects:vc,vc2, vc3, vc4,nil]];
     
+    YLNavigationController * videoNav = [[YLNavigationController alloc] initWithRootViewController:[[YLVideoViewController alloc] init]];
+    YLNavigationController * jsNativeNav = [[YLNavigationController alloc] initWithRootViewController:[[YLJSNativeViewController alloc] init]];
+    YLNavigationController * cameraNav = [[YLNavigationController alloc] initWithRootViewController:[[YLCameraViewController alloc] init]];
+    [self setViewControllers:[NSArray arrayWithObjects:videoNav,jsNativeNav,cameraNav,nil]];
     [self hideTabBar];
-
-
 }
 
 - (void)buttonTapped:(UIButton *)button
