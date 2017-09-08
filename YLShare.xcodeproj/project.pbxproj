@@ -22,6 +22,10 @@
 		3948875C1F60EFE200CC915C /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948875B1F60EFE200CC915C /* UIImage+Additions.m */; };
 		3948875F1F60F0B000CC915C /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948875E1F60F0B000CC915C /* NSString+Path.m */; };
 		394887631F60F81400CC915C /* YLShootImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 394887621F60F81400CC915C /* YLShootImages.bundle */; };
+		394A27CE1F622F4500B410A0 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 394A27CD1F622F4500B410A0 /* UIView+Additions.m */; };
+		394A27D31F62314C00B410A0 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394A27D21F62314C00B410A0 /* UIWebViewController.m */; };
+		394A27D61F62315700B410A0 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394A27D51F62315700B410A0 /* WKWebViewController.m */; };
+		394A27D81F62349800B410A0 /* WKWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 394A27D71F62349800B410A0 /* WKWebView.html */; };
 		91F292CC17934D6FEEE3BE9B /* libPods-YLShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659830C96AD7ED2E1A4E7E12 /* libPods-YLShare.a */; };
 		D82BE2B11F5DAE42003A37DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D82BE2B01F5DAE42003A37DB /* main.m */; };
 		D82BE2B41F5DAE42003A37DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82BE2B31F5DAE42003A37DB /* AppDelegate.m */; };
@@ -81,6 +85,13 @@
 		3948875D1F60F0B000CC915C /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
 		3948875E1F60F0B000CC915C /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
 		394887621F60F81400CC915C /* YLShootImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YLShootImages.bundle; sourceTree = "<group>"; };
+		394A27CC1F622F4500B410A0 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		394A27CD1F622F4500B410A0 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		394A27D11F62314C00B410A0 /* UIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		394A27D21F62314C00B410A0 /* UIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		394A27D41F62315700B410A0 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		394A27D51F62315700B410A0 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		394A27D71F62349800B410A0 /* WKWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebView.html; sourceTree = "<group>"; };
 		659830C96AD7ED2E1A4E7E12 /* libPods-YLShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBBD57A0E8538817F711A56 /* Pods-YLShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLShare/Pods-YLShare.release.xcconfig"; sourceTree = "<group>"; };
 		D82BE2AC1F5DAE41003A37DB /* YLShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +201,8 @@
 				3948875B1F60EFE200CC915C /* UIImage+Additions.m */,
 				3948875D1F60F0B000CC915C /* NSString+Path.h */,
 				3948875E1F60F0B000CC915C /* NSString+Path.m */,
+				394A27CC1F622F4500B410A0 /* UIView+Additions.h */,
+				394A27CD1F622F4500B410A0 /* UIView+Additions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -225,6 +238,8 @@
 			children = (
 				3948872E1F60ED7500CC915C /* YLJSNativeViewController.h */,
 				3948872F1F60ED7500CC915C /* YLJSNativeViewController.m */,
+				394A27CF1F62313300B410A0 /* UIWebView */,
+				394A27D01F62313300B410A0 /* WKWebView */,
 			);
 			path = WebViewPages;
 			sourceTree = "<group>";
@@ -245,6 +260,25 @@
 				394887621F60F81400CC915C /* YLShootImages.bundle */,
 			);
 			path = YLShootVideo;
+			sourceTree = "<group>";
+		};
+		394A27CF1F62313300B410A0 /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				394A27D11F62314C00B410A0 /* UIWebViewController.h */,
+				394A27D21F62314C00B410A0 /* UIWebViewController.m */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		394A27D01F62313300B410A0 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				394A27D41F62315700B410A0 /* WKWebViewController.h */,
+				394A27D51F62315700B410A0 /* WKWebViewController.m */,
+				394A27D71F62349800B410A0 /* WKWebView.html */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 		82710FF5E68BCE41960F5E81 /* Frameworks */ = {
@@ -438,6 +472,7 @@
 				D82BE2BC1F5DAE42003A37DB /* Assets.xcassets in Resources */,
 				394887631F60F81400CC915C /* YLShootImages.bundle in Resources */,
 				D82BE2BA1F5DAE42003A37DB /* Main.storyboard in Resources */,
+				394A27D81F62349800B410A0 /* WKWebView.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394A27CE1F622F4500B410A0 /* UIView+Additions.m in Sources */,
 				394887541F60EDC800CC915C /* YLShootVideoManager.m in Sources */,
 				394887551F60EDC800CC915C /* YLShootVideoModel.m in Sources */,
 				394887301F60ED7500CC915C /* YLCameraViewController.m in Sources */,
@@ -524,6 +560,8 @@
 				394887291F60E9A800CC915C /* YLVideoViewController.m in Sources */,
 				394887521F60EDC800CC915C /* YLAnimationRecordView.m in Sources */,
 				3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */,
+				394A27D61F62315700B410A0 /* WKWebViewController.m in Sources */,
+				394A27D31F62314C00B410A0 /* UIWebViewController.m in Sources */,
 				3948875C1F60EFE200CC915C /* UIImage+Additions.m in Sources */,
 				D82BE2B11F5DAE42003A37DB /* main.m in Sources */,
 			);
@@ -680,7 +718,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -695,7 +733,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

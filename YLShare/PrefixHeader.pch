@@ -17,5 +17,6 @@
 #import "SVProgressHUD.h"
 #import "GlobalDef.h"
 #import "UtilityMacro.h"
+#import "UIView+Additions.h"
 
 #endif /* PrefixHeader_pch */

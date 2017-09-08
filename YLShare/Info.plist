@@ -25,6 +25,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>请点击"好"以允许访问</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>请点击"好"以允许访问</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>请点击"好"以允许访问</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>请点击"好"以允许访问</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>请点击"好"以允许访问</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -35,15 +45,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>请点击&quot;好&quot;以允许访问</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>请点击&quot;好&quot;以允许访问</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>请点击&quot;好&quot;以允许访问</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>请点击&quot;好&quot;以允许访问</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>请点击&quot;好&quot;以允许访问</string>
 </dict>
 </plist>
