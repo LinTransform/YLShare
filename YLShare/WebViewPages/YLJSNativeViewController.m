@@ -8,6 +8,7 @@
 
 #import "YLJSNativeViewController.h"
 #import "WKWebViewController.h"
+#import "UIWebViewController.h"
 
 @interface YLJSNativeViewController ()
 
@@ -41,7 +42,8 @@
 }
 
 - (void) webButtonClick {
-
+    UIWebViewController * wkVC = [[UIWebViewController alloc] init];
+    [self.navigationController pushViewController:wkVC animated:YES];
 }
 
 - (void) wkWebButtonClick {

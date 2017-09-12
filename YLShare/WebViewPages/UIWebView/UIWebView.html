@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+            <meta name="viewport" content="width=750,user-scalable=0"/>
+            <title>JSCallOCTitle</title>
+            
+            <style>
+                
+                body
+                {
+                    text-align:center
+                }
+            </style>
+            
+            <script language="javascript">
+                
+            function jsCallNativeSendJsonString() {
+                alert("这里的 js 方法声明不写都是可以的,因为原生会拦截js方法,写了也不会调用的");
+            }
+            
+            function nativeCallJSSendJsonString (returnStr) {
+                document.getElementById("showMessageFromNative").value = returnStr;
+            }
+            
+            // 弹提示框
+            function popAlertPanel() {
+                alert("警告");
+            }
+            // 弹确认框
+            function popConfirmPanel() {
+                var ok = confirm("您确定选择么?");
+                document.getElementById('temp').innerHTML = ok;
+            }
+            // 弹输入框
+            function popTextInputPanel() {
+                var tel = prompt("联系方式","请输入手机号");
+                document.getElementById('temp').innerHTML = tel;
+            }
+            
+            
+            
+            
+                </script>
+            </head>
+    
+    <body>
+        <input type="button" value="弹提示框" onclick="popAlertPanel()" style=" width:400px; height:100px; font-size:30pt"/>
+        <br>
+        <br>
+        <input type="button" value="弹确认框" onclick="popConfirmPanel()" style=" width:400px; height:100px; font-size:30pt"/>
+        <br>
+        <br>
+        <input type="button" value="弹输入框" onclick="popTextInputPanel()" style=" width:400px; height:100px; font-size:30pt"/>
+        <br>
+        <br>
+        <input type="button" value="JS 调用原生" onclick="jsCallNativeSendJsonString('这是js传给原生的数据')" style=" width:400px; height:100px; font-size:30pt"/>
+        <br>
+        <br>
+        <textarea id ="showMessageFromNative" type="value" rows="5" cols="30" style="font-size:30pt;color:black;">
+        </textarea>
+        
+        <div>
+        </div>
+        
+    </body>
+</html>

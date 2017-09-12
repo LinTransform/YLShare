@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3937F2F41F5FC4A800556BBF /* YLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2F31F5FC4A800556BBF /* YLTabBarController.m */; };
 		3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */; };
+		394606FE1F67B6220084130A /* UIWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 394606FD1F67B6220084130A /* UIWebView.html */; };
+		394607041F67C1FD0084130A /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 394607011F67C1FD0084130A /* NJKWebViewProgress.m */; };
+		394607051F67C1FD0084130A /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 394607031F67C1FD0084130A /* NJKWebViewProgressView.m */; };
 		3948871D1F60E84300CC915C /* YLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948871C1F60E84300CC915C /* YLNavigationController.m */; };
 		394887201F60E86000CC915C /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3948871F1F60E86000CC915C /* YLBaseViewController.m */; };
 		394887291F60E9A800CC915C /* YLVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394887281F60E9A800CC915C /* YLVideoViewController.m */; };
@@ -60,6 +63,11 @@
 		3937F2FA1F5FC8BC00556BBF /* GlobalDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDef.h; sourceTree = "<group>"; };
 		3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalDef.m; sourceTree = "<group>"; };
 		3937F2FD1F5FC9A500556BBF /* UtilityMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMacro.h; sourceTree = "<group>"; };
+		394606FD1F67B6220084130A /* UIWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebView.html; sourceTree = "<group>"; };
+		394607001F67C1FD0084130A /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		394607011F67C1FD0084130A /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		394607021F67C1FD0084130A /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		394607031F67C1FD0084130A /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		3948871B1F60E84300CC915C /* YLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNavigationController.h; sourceTree = "<group>"; };
 		3948871C1F60E84300CC915C /* YLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNavigationController.m; sourceTree = "<group>"; };
 		3948871E1F60E86000CC915C /* YLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseViewController.h; sourceTree = "<group>"; };
@@ -224,6 +232,17 @@
 			path = YLShareManager;
 			sourceTree = "<group>";
 		};
+		394606FF1F67C1FD0084130A /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				394607001F67C1FD0084130A /* NJKWebViewProgress.h */,
+				394607011F67C1FD0084130A /* NJKWebViewProgress.m */,
+				394607021F67C1FD0084130A /* NJKWebViewProgressView.h */,
+				394607031F67C1FD0084130A /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
 		3948872A1F60ED7500CC915C /* ShootPages */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,8 +284,10 @@
 		394A27CF1F62313300B410A0 /* UIWebView */ = {
 			isa = PBXGroup;
 			children = (
+				394606FF1F67C1FD0084130A /* NJKWebViewProgress */,
 				394A27D11F62314C00B410A0 /* UIWebViewController.h */,
 				394A27D21F62314C00B410A0 /* UIWebViewController.m */,
+				394606FD1F67B6220084130A /* UIWebView.html */,
 			);
 			path = UIWebView;
 			sourceTree = "<group>";
@@ -472,6 +493,7 @@
 				D82BE2BC1F5DAE42003A37DB /* Assets.xcassets in Resources */,
 				394887631F60F81400CC915C /* YLShootImages.bundle in Resources */,
 				D82BE2BA1F5DAE42003A37DB /* Main.storyboard in Resources */,
+				394606FE1F67B6220084130A /* UIWebView.html in Resources */,
 				394A27D81F62349800B410A0 /* WKWebView.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394607041F67C1FD0084130A /* NJKWebViewProgress.m in Sources */,
 				394A27CE1F622F4500B410A0 /* UIView+Additions.m in Sources */,
 				394887541F60EDC800CC915C /* YLShootVideoManager.m in Sources */,
 				394887551F60EDC800CC915C /* YLShootVideoModel.m in Sources */,
@@ -560,6 +583,7 @@
 				394887291F60E9A800CC915C /* YLVideoViewController.m in Sources */,
 				394887521F60EDC800CC915C /* YLAnimationRecordView.m in Sources */,
 				3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */,
+				394607051F67C1FD0084130A /* NJKWebViewProgressView.m in Sources */,
 				394A27D61F62315700B410A0 /* WKWebViewController.m in Sources */,
 				394A27D31F62314C00B410A0 /* UIWebViewController.m in Sources */,
 				3948875C1F60EFE200CC915C /* UIImage+Additions.m in Sources */,
@@ -718,7 +742,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -733,7 +757,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

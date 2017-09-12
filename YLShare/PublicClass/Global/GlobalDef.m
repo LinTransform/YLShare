@@ -10,6 +10,10 @@
 
 CGFloat const KTabBarHeight = 49;
 
+NSString * const NativeCallJSSendJsonStringMethod = @"nativeCallJSSendJsonString";
+NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString";
+
+
 @implementation GlobalDef
 
 @end

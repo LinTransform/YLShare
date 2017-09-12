@@ -10,6 +10,9 @@
 
 extern CGFloat const KTabBarHeight;
 
+extern NSString * const NativeCallJSSendJsonStringMethod;
+extern NSString * const JSCallNativeSendJsonStringMethod;
+
 @interface GlobalDef : NSObject
 
 @end

@@ -9,8 +9,6 @@
 #import "WKWebViewController.h"
 #import <WebKit/WebKit.h>
 
-NSString * const NativeCallJSSendJsonStringMethod = @"nativeCallJSSendJsonString";
-NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString";
 
 @interface WKWebViewController ()<WKScriptMessageHandler,WKUIDelegate,WKNavigationDelegate>
 
@@ -178,10 +176,7 @@ NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString
     UIView * tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     [self.view addSubview:tempView];
     
-    NSString *webViewURLStr = [[NSBundle mainBundle] pathForResource:@"WKWebView.html" ofType:nil];
-    NSURL *fileURL = [NSURL fileURLWithPath:webViewURLStr];
-    [self.wkWebView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
-    self.wkWebView.UIDelegate = self;
+    
     [self.view addSubview:self.wkWebView];
     
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 64, Main_Screen_Width, 2)];
@@ -201,6 +196,11 @@ NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString
     callJSBtn.backgroundColor = [UIColor yellowColor];
     [callJSBtn addTarget:self action:@selector(callJSButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:callJSBtn];
+    
+    NSString *webViewURLStr = [[NSBundle mainBundle] pathForResource:@"WKWebView.html" ofType:nil];
+    NSURL *fileURL = [NSURL fileURLWithPath:webViewURLStr];
+    [self.wkWebView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
+
 }
 
 - (void) jsCallNativeSendMessage: (NSString *)jsonStr {
@@ -240,14 +240,6 @@ NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString
 }
 
 - (void) releaseWebView {
-/*
- [self.wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:observingOptions context:nil];
- [self.wkWebView addObserver:self forKeyPath:@"title" options:observingOptions context:nil];
- 
- // 监听 self.webView.scrollView 的 contentSize 属性改变，从而对底部添加的自定义 View 进行位置调整
- [self.wkWebView.scrollView addObserver:self forKeyPath:@"contentSize" options:observingOptions context:nil];
-
- */
     [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
     [self.wkWebView removeObserver:self forKeyPath:@"title"];
     [self.wkWebView.scrollView removeObserver:self forKeyPath:@"contentSize"];
