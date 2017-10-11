@@ -10,6 +10,10 @@
 		392A96971F78DCB600CC6271 /* GlobalNetworkURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 392A96961F78DCB600CC6271 /* GlobalNetworkURL.m */; };
 		3937F2F41F5FC4A800556BBF /* YLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2F31F5FC4A800556BBF /* YLTabBarController.m */; };
 		3937F2FC1F5FC8BC00556BBF /* GlobalDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */; };
+		393831F01F8E077900CC7730 /* videoPreview2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 393831EC1F8E077900CC7730 /* videoPreview2.PNG */; };
+		393831F11F8E077900CC7730 /* videoPreview.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 393831ED1F8E077900CC7730 /* videoPreview.PNG */; };
+		393831F21F8E077900CC7730 /* cameraPreview.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 393831EE1F8E077900CC7730 /* cameraPreview.PNG */; };
+		393831F31F8E077900CC7730 /* js-nativePreview.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 393831EF1F8E077900CC7730 /* js-nativePreview.PNG */; };
 		394606FE1F67B6220084130A /* UIWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 394606FD1F67B6220084130A /* UIWebView.html */; };
 		394607041F67C1FD0084130A /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 394607011F67C1FD0084130A /* NJKWebViewProgress.m */; };
 		394607051F67C1FD0084130A /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 394607031F67C1FD0084130A /* NJKWebViewProgressView.m */; };
@@ -112,6 +116,10 @@
 		3937F2FA1F5FC8BC00556BBF /* GlobalDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDef.h; sourceTree = "<group>"; };
 		3937F2FB1F5FC8BC00556BBF /* GlobalDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalDef.m; sourceTree = "<group>"; };
 		3937F2FD1F5FC9A500556BBF /* UtilityMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMacro.h; sourceTree = "<group>"; };
+		393831EC1F8E077900CC7730 /* videoPreview2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPreview2.PNG; sourceTree = "<group>"; };
+		393831ED1F8E077900CC7730 /* videoPreview.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPreview.PNG; sourceTree = "<group>"; };
+		393831EE1F8E077900CC7730 /* cameraPreview.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraPreview.PNG; sourceTree = "<group>"; };
+		393831EF1F8E077900CC7730 /* js-nativePreview.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "js-nativePreview.PNG"; sourceTree = "<group>"; };
 		394606FD1F67B6220084130A /* UIWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebView.html; sourceTree = "<group>"; };
 		394607001F67C1FD0084130A /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
 		394607011F67C1FD0084130A /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
@@ -376,6 +384,17 @@
 			path = YLShareManager;
 			sourceTree = "<group>";
 		};
+		393831EB1F8E076B00CC7730 /* githubPreview */ = {
+			isa = PBXGroup;
+			children = (
+				393831ED1F8E077900CC7730 /* videoPreview.PNG */,
+				393831EC1F8E077900CC7730 /* videoPreview2.PNG */,
+				393831EE1F8E077900CC7730 /* cameraPreview.PNG */,
+				393831EF1F8E077900CC7730 /* js-nativePreview.PNG */,
+			);
+			path = githubPreview;
+			sourceTree = "<group>";
+		};
 		394606FF1F67C1FD0084130A /* NJKWebViewProgress */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +532,7 @@
 		3995FE8B1F8CD50D00CC4783 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				393831EB1F8E076B00CC7730 /* githubPreview */,
 				3995FE8C1F8CD54A00CC4783 /* VideoDetailPages */,
 			);
 			path = Resources;
@@ -755,10 +775,13 @@
 			files = (
 				3995FEBE1F8CD54A00CC4783 /* videoDetail_progressBack@3x.png in Resources */,
 				3995FEC51F8CD54A00CC4783 /* videoDetail_titleBack@2x.png in Resources */,
+				393831F31F8E077900CC7730 /* js-nativePreview.PNG in Resources */,
 				D82BE2BF1F5DAE42003A37DB /* LaunchScreen.storyboard in Resources */,
 				3995FEC41F8CD54A00CC4783 /* videoDetail_share@3x.png in Resources */,
+				393831F11F8E077900CC7730 /* videoPreview.PNG in Resources */,
 				3995FEBF1F8CD54A00CC4783 /* videoDetail_progressPoint@2x.png in Resources */,
 				3995FEAC1F8CD54A00CC4783 /* videoDetail_cachePoint@2x.jpg in Resources */,
+				393831F21F8E077900CC7730 /* cameraPreview.PNG in Resources */,
 				3995FEB71F8CD54A00CC4783 /* videoDetail_pause@2x.png in Resources */,
 				3995FEBD1F8CD54A00CC4783 /* videoDetail_progressBack@2x.png in Resources */,
 				D82BE2BC1F5DAE42003A37DB /* Assets.xcassets in Resources */,
@@ -782,6 +805,7 @@
 				3995FEC61F8CD54A00CC4783 /* videoDetail_titleBack@3x.png in Resources */,
 				3995FEC31F8CD54A00CC4783 /* videoDetail_share@2x.png in Resources */,
 				3995FEAD1F8CD54A00CC4783 /* videoDetail_fullScreen@2x.png in Resources */,
+				393831F01F8E077900CC7730 /* videoPreview2.PNG in Resources */,
 				3995FEBA1F8CD54A00CC4783 /* videoDetail_play@3x.png in Resources */,
 				3995FEB61F8CD54A00CC4783 /* videoDetail_more@3x.png in Resources */,
 				3995FEB01F8CD54A00CC4783 /* videoDetail_likeNormal@3x.png in Resources */,
@@ -1053,7 +1077,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1068,7 +1092,7 @@
 				INFOPLIST_FILE = YLShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.Future.YLShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.100rd.hotSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

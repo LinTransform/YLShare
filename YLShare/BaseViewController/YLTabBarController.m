@@ -38,7 +38,7 @@
         make.height.mas_equalTo(KTabBarHeight);
     }];
 
-    NSArray * titleArray = @[@"Camera",@"Video",@"JS-Native"];
+    NSArray * titleArray = @[@"Video",@"Camera",@"JS-Native"];
 
     CGFloat buttonWidth = App_Frame_Width / titleArray.count;
     
