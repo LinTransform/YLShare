@@ -38,7 +38,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [[AppDelegate sharedAppDelegate].tabBarViewController hideOrNotTabBar:NO];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -242,6 +241,7 @@
 - (void) releaseWebView {
     [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
     [self.wkWebView removeObserver:self forKeyPath:@"title"];
+    
     [self.wkWebView.scrollView removeObserver:self forKeyPath:@"contentSize"];
     [[self.wkWebView configuration].userContentController removeScriptMessageHandlerForName:JSCallNativeSendJsonStringMethod];
     self.wkWebView.UIDelegate = nil;

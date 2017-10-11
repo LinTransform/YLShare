@@ -20,7 +20,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"JS-Native";
-    
     CGFloat w = 200;
     CGFloat h = 50;
     UIButton * webButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, w, h)];
@@ -39,6 +38,11 @@
     [wkWebButton addTarget:self action:@selector(wkWebButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:wkWebButton];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[AppDelegate sharedAppDelegate].tabBarViewController hideOrNotTabBar:NO];
 }
 
 - (void) webButtonClick {

@@ -12,7 +12,8 @@ CGFloat const KTabBarHeight = 49;
 
 NSString * const NativeCallJSSendJsonStringMethod = @"nativeCallJSSendJsonString";
 NSString * const JSCallNativeSendJsonStringMethod = @"jsCallNativeSendJsonString";
-
+CGFloat const KCollectionViewColumnSpace = 10.0f;
+CGFloat const KCollectionViewInterItemSpace = 20.0f;
 
 @implementation GlobalDef
 

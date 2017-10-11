@@ -64,10 +64,10 @@
     }
     [_tabBarBg setItems:buttonArray];
     
-    YLNavigationController * cameraNav = [[YLNavigationController alloc] initWithRootViewController:[[YLCameraViewController alloc] init]];
     YLNavigationController * videoNav = [[YLNavigationController alloc] initWithRootViewController:[[YLVideoViewController alloc] init]];
+    YLNavigationController * cameraNav = [[YLNavigationController alloc] initWithRootViewController:[[YLCameraViewController alloc] init]];
     YLNavigationController * jsNativeNav = [[YLNavigationController alloc] initWithRootViewController:[[YLJSNativeViewController alloc] init]];
-    [self setViewControllers:[NSArray arrayWithObjects:cameraNav,videoNav,jsNativeNav,nil]];
+    [self setViewControllers:[NSArray arrayWithObjects:videoNav,cameraNav,jsNativeNav,nil]];
     [self hideTabBar];
 }
 
@@ -98,5 +98,12 @@
 {
     _tabBarBg.hidden = hidden;
 }
+
+
+#pragma mark - 关于转屏控制
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
 
 @end

@@ -24,7 +24,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"Camera";
-    
     self.showView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, Main_Screen_Width, Main_Screen_Width * SHOOT_RATIO)];
     self.showView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.showView];

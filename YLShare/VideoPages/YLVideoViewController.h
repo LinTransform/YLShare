@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Future. All rights reserved.
 //
 
-#import "YLBaseViewController.h"
+#import "YLBaseCollectionVC.h"
 
-@interface YLVideoViewController : YLBaseViewController
+@interface YLVideoViewController : YLBaseCollectionVC
 
 @end

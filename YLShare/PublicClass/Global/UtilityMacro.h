@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Future. All rights reserved.
 //
 
-#ifndef MmiaHD_UtilityMacro_h
-#define MmiaHD_UtilityMacro_h
+#ifndef YLShare_UtilityMacro_h
+#define YLShare_UtilityMacro_h
 // app尺寸
 #define Main_Screen_Height [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width  [[UIScreen mainScreen] bounds].size.width
@@ -25,6 +25,8 @@
 #define ColorWithHexRGB(rgbValue) ColorWithHexRGBA(rgbValue,1.0)
 #define UIColorWhite [UIColor whiteColor]
 #define UIColorClear [UIColor clearColor]
+#define Color_Background_Gray 0xf5f5f5
+#define Color_Red 0xb91223
 
 // 字体
 #define UIFontSystem(x)     [UIFont systemFontOfSize:x]

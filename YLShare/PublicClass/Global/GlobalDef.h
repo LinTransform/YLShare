@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#define Request_Size        10
+#define kTabbarHeight (49.f)
+// app 中视频的宽高比例
+#define VideoPlayerRatio (422.0 / 750)
+
 extern CGFloat const KTabBarHeight;
+extern CGFloat const KCollectionViewColumnSpace;
+extern CGFloat const KCollectionViewInterItemSpace;
 
 extern NSString * const NativeCallJSSendJsonStringMethod;
 extern NSString * const JSCallNativeSendJsonStringMethod;
